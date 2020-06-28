@@ -21,6 +21,7 @@ def index(request):
 	page = request.GET.get('page')
 	try:
 		posts = all_post.page(page)
+
 	except PageNotAnInteger:
 		posts = all_post.page(1)
 	except EmptyPage:

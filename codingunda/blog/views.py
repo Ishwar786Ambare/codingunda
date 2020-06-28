@@ -16,6 +16,7 @@ def index(request):
     trends = Post.objects.filter(time_upload__gte=week_ago).order_by('-read')
     TopAuthors = Author.objects.order_by('-rate')[:4]
     AuthorsPost = [Post.objects.filter(auther=author).first() for author in TopAuthors]
+    print(AuthorsPost)
 
     all_post = Paginator(Post.objects.filter(publish=True), 3)
     page = request.GET.get('page')

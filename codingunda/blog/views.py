@@ -4,6 +4,7 @@ from .models import Post, Author, subscribe
 import datetime
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.db.models import Q
+from django.http import HttpResponse
 
 
 def index(request):
@@ -96,3 +97,7 @@ def view_all(request, query):
             pass
 
     return render(request, 'all.html', parms)
+
+
+def product_settings(request):
+    return render(request, 'product_settings.html')

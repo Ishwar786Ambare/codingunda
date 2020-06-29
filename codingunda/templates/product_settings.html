@@ -482,7 +482,7 @@ font-weight: 500;
                     </div>
                 </div>
                 <div class="firstsecPastbill">
-                    <img src="./img/pastbill.png" class="pastbillimage">
+                    <img src="{% static './img/billing.png' %}" class="pastbillimage">
                     <div class="firsttwo">
                         <span class="firstspantwo">_Billing Settings</span>
                     </div>
@@ -491,7 +491,7 @@ font-weight: 500;
 
 
                 <div class="firstsecHelpTutorial">
-                    <img src="./img/tutorial.png" class="tutorialimage">
+                    <img src="{% static './img/hardwere.png' %}" class="tutorialimage">
                     <div class="firstthree">
                         <span class="firstspanthree">Hardware</span>
                         <p class="firstspanfour"> _Settings</p>
@@ -500,7 +500,7 @@ font-weight: 500;
 
 
                 <div class="firstsecInvoice">
-                    <img src="./img/tutorial.png" class="tutorialimage">
+                    <img src="{% static './img/invoice.png' %}" class="tutorialimage">
                     <div class="firstthree">
                         <span class="firstspanthree">Invoice</span>
                         <p class="firstspanfour"> _Settings</p>
@@ -509,7 +509,7 @@ font-weight: 500;
 
 
                 <div class="firstseLanguage">
-                    <img src="./img/tutorial.png" class="tutorialimage">
+                    <img src="{% static './img/tutorial.png' %}" class="tutorialimage">
                     <div class="firstthree">
                         <span class="firstspanthree">Language</span>
                         <p class="firstspanfour"> Settings</p>
@@ -518,15 +518,12 @@ font-weight: 500;
 
 
                 <div class="firstsecStaff">
-                    <img src="./img/tutorial.png" class="tutorialimage">
+                    <img src="{% static './img/staff.png' %}" class="tutorialimage">
                     <div class="firstthree">
                         <span class="firstspanthree">Staff</span>
                         <p class="firstspanfour"> _Settings</p>
                     </div>
                 </div>
-
-
-
             </div>
             <br>
             <div class="firstsecline"></div>
@@ -536,22 +533,22 @@ font-weight: 500;
 
     <section id="product">
         <div class="productspandiv">
-            <span class="productspan">Configure Store</span>
+            <span class="productspan">Payment Mode</span>
             <div class="productline"></div>
         </div>
         <div class="productdivsec">
             <div class="productsecuploadimg">
-                <img src="./img/uploadlogo.png"  class="currentbillimage">
+                <img src="{% static './img/payment.png' %}"  class="currentbillimage">
                 <div class="firstone">
-                    <span class="firstspan">Upload</span>
-                    <p class="firstspanone"> LOGO</p>
+                    <span class="firstspan">Payment</span>
+                    <p class="firstspanone"> Tracking</p>
                 </div>
             </div>
             <div class="productsecGSTimg">
-                <img src="./img/gstimage.png"  class="currentbillimage">
+                <img src="{% static './img/upi.png' %}"  class="currentbillimage">
                 <div class="firstone">
-                    <span class="firstspan">AddGST</span>
-                    <p class="firstspanone"> Number</p>
+                    <span class="firstspan">_UPI</span>
+{#                    <p class="firstspanone"> Number</p>#}
                 </div>
             </div>
         </div>
@@ -560,47 +557,6 @@ font-weight: 500;
 
 
 
-    <section id="stock">
-        <div class="stockspandiv">
-            <span class="stockspan">More</span>
-            <div class="stockline"></div>
-         </div>
-         <div class="stockdivsec">
-            <div class="stockseclaunchimg">
-                <img src="./img/launch.png"  class="currentbillimage">
-                <div class="firstone">
-                  <span class="firstspan">Launch</span>
-                <p class="firstspanone">Store</p>
-            </div>
-
-                </div>
-                <div class="stocksecSettingimg">
-                    <img src="./img/setting.png"  class="currentbillimage">
-                    <div class="firstone">
-                      <span class="firstspan">Store</span>
-                    <p class="firstspanone">Setting</p>
-                </div>
-
-                    </div>
-                    <div class="stocksecproductstockimg">
-                        <img src="./img/product.png"  class="currentbillimage">
-                        <div class="firstone">
-                          <span class="firstspan">Product&</span>
-                        <p class="firstspanone">Store</p>
-                    </div>
-                    </div>
-
-                    <div class="stocksecCustomerimg">
-                        <img src="./img/costumer.png"  class="currentbillimage">
-                        <div class="firstone">
-                          <span class="firstspan">Customers</span>
-                        <!-- <p class="firstspanone"> LOGO</p> -->
-                    </div>
-                    </div>
-
-        </div>
-        <div class="stockbottomsecline"></div>
-    </section>
 
 
 

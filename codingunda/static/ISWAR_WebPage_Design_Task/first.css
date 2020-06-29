@@ -1,0 +1,429 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+section{
+    height: 50vh;
+    border: 1px solid rgb(255, 255, 255);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+
+
+#first{
+    background-color: white;
+}
+#product{
+    background-color:  white
+}
+#stock{
+    background-color: white
+}
+/*start slider*/
+.sliderdiv{
+    height: 150px;
+    width: 1200px;
+    margin-left: 100px;
+    position: relative;
+    /* background-color: rgb(235, 235, 150); */
+}
+.bell{
+    height: 50px;
+    width: 50px;
+    margin-top: 40px;
+    margin-left: 1000px;
+    position: absolute;
+}
+.cloud{
+    height: 50px;
+    width: 50px;
+    margin-top: 40px;
+    margin-left: 920px;
+    position: absolute;
+
+}
+.pogo{
+    height: 50px;
+    width: 90px;
+    margin-top: 40px;
+    margin-left: 495px;
+    position: absolute;
+
+}
+.sliderdivspan{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 60px;
+}
+.sidenav {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+   background-color: rgb(216, 216, 216);
+
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  /* .home{
+      height: 20px;
+      width: 20px;
+      margin-left: 40px; */
+       /* margin-top: 100px; */
+      
+  /* } */
+  
+  .sidenav a {
+    /* padding: 10px 0px 8px 40px; */
+    padding-top: 20px;
+    padding-left: 70px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #4e4d4d;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color:rgb(0, 95, 236);
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+/*End slider*/
+.headerone{
+    height: 140px;
+    width: 800px;
+    background-color: rgba(91, 196, 245, 0.4);
+    border-radius: 10px;
+    margin-top: 145px;
+    margin-left: 260px;
+   box-shadow: 0px 0px 10px rgb(167, 167, 167);
+   position: relative;
+   
+}
+.headericon {
+   margin-top: 25px; 
+   margin-left: 20px;
+   height:50px;
+   width:50px; 
+   position: absolute;
+    
+
+}
+.headertext{
+    margin-top: 38px;
+    margin-left: 105px;
+    position: absolute;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 100;
+    color: rgb(70, 70, 70);
+}
+.headerprice{
+    margin-left: 108px;
+    margin-top: 60px;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 100;
+    color: rgb(70, 70, 70);
+    position: absolute;
+}
+.headerpriceone{
+    margin-left: 118px;
+    margin-top: 60px;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 100;
+    color: rgb(70, 70, 70);
+    position: absolute;
+
+}
+.headersymbol{
+    margin-left:700px ;
+    margin-top: 50px;
+    font-size: 45px;
+    font-weight: bold;
+    color: rgb(70, 70, 70);
+    position: absolute;
+}
+.headerline{
+    width: 850px;
+    height: 1px;
+    background-color: gray;
+    margin-left: 240px;
+}
+.firstsec{
+    height: 200px;
+    width: 800px;
+    margin-top: 5px;
+    margin-left: 250px;
+    position: relative;
+    /* background-color: rgb(0, 255, 42); */
+}
+.firstsecCreatebill{
+    height: 160px;
+    width: 115px;
+    position: absolute;
+    margin-left: 12px;
+    margin-top: 5px;
+  
+   
+    border-radius: 10px;
+    background-color: rgba(248, 189, 219,0.2);
+}
+.currentbillimage{
+    height:25px;
+     width:25px;
+     margin-left: 40px;
+     margin-top: 25px;
+}
+.firstone{
+    height: 45px;
+    width: 55px;
+    margin-left: 30px;
+    margin-top: 10px;
+    position: absolute;
+    /* background-color: yellow; */
+}
+.firstspan{
+    /* padding-top: 0px; */
+    font-size: 18px;
+    font-weight: 500;
+}
+.firstspanone{
+margin-top: 0px;
+margin-left: 5px;
+font-size: 18px;
+font-weight: 500;
+}
+
+
+.firstsecPastbill{
+    height: 160px;
+    width: 115px;
+    position: absolute;
+    margin-left: 160px; 
+     margin-top: 5px;
+    border-radius: 10px;
+    background-color: rgba(248, 189, 219,0.2);
+
+}
+.pastbillimage{
+    height:25px;
+    width:25px;
+    margin-left: 40px;
+    margin-top: 25px;
+
+}
+.firsttwo{
+    height: 45px;
+    width: 55px;
+    margin-left: 30px;
+    margin-top: 10px;
+    position: absolute;
+
+}
+.firstspantwo{
+    font-size: 18px;
+    font-weight: 500;
+}
+.firstsecHelpTutorial{
+    height: 160px;
+    width: 115px;
+    position: absolute;
+    margin-left: 315px; 
+     margin-top: 5px;
+    border-radius: 10px;
+    background-color:  rgba(248, 189, 219,0.2);
+
+}
+.tutorialimage{
+    height:25px;
+    width:25px;
+    margin-left: 40px;
+    margin-top: 25px;
+}
+.firstthree{
+    height: 45px;
+    width: 55px;
+    margin-left: 30px;
+    margin-top: 10px;
+    position: absolute;
+}
+.firstspanthree{
+    font-size: 18px;
+    font-weight: 500;
+
+}
+.firstspanfour{
+    margin-top: 0px;
+
+font-size: 18px;
+font-weight: 500;
+
+}
+.firstsecline{
+    width: 850px;
+    height: 1px;
+    background-color: gray;
+    margin-left: 240px;
+    box-shadow: 0px 0px 20px rgb(167, 167, 167);
+
+}
+.productspandiv{
+    height: 60px;
+    width: 1000px;
+    position: relative;
+/* background-color: yellow; */
+}
+.productline{
+    width: 500px;
+    height: 1px;
+    background-color: gray;
+    margin-top: 30px;
+    margin-left: 415px;
+    position: absolute;
+}
+
+.productspan{
+   margin-top: 22px;
+    margin-left: 270px;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+}
+.productdivsec{
+    height: 200px;
+    width: 800px;
+    margin-left: 250px;
+    position: relative;
+    /* background-color: rgb(216, 230, 220); */
+}
+ .productsecuploadimg{
+    height: 160px;
+    width: 115px;
+    position: absolute;
+    margin-left: 12px;
+    margin-top: 5px;
+  
+   
+    border-radius: 10px;
+    background-color: rgba(248, 189, 219,0.2);
+} 
+.productsecGSTimg{
+    height: 160px;
+    width: 115px;
+    position: absolute;
+    margin-left: 160px;
+    margin-top: 5px; 
+    border-radius: 10px;
+    background-color: rgba(248, 189, 219,0.2);
+
+}
+.productbottomsecline{
+    width: 850px;
+    height: 1px;
+    background-color: gray;
+    margin-left: 240px;
+    box-shadow: 0px 0px 20px rgb(167, 167, 167);
+
+}
+.stockspandiv{
+    height: 60px;
+    width: 1000px;
+    position: relative;
+/* background-color: yellow; */
+}
+.stockline{
+    width: 600px;
+    height: 1px;
+    background-color: gray;
+    margin-top: 30px;
+    margin-left: 320px;
+    position: absolute;
+}
+
+.stockspan{
+   margin-top: 22px;
+    margin-left: 270px;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+}
+.stockdivsec{
+    height: 200px;
+    width: 900px;
+    margin-left: 250px;
+    position: relative;
+    /* background-color: rgb(166, 255, 23); */
+
+}
+.stockseclaunchimg{
+    height: 160px;
+    width: 115px;
+    position: absolute;
+    margin-left: 12px;
+    margin-top: 5px;
+  
+   
+    border-radius: 10px;
+    background-color: rgba(248, 189, 219,0.2);
+
+}
+.stocksecSettingimg{
+    height: 160px;
+    width: 115px;
+    position: absolute;
+    margin-left: 160px;
+    margin-top: 5px; 
+    border-radius: 10px;
+    background-color: rgba(248, 189, 219,0.2);
+
+}
+.stocksecproductstockimg{
+    height: 160px;
+    width: 115px;
+    position: absolute;
+    margin-left: 310px;
+    margin-top: 5px; 
+    border-radius: 10px;
+    background-color: rgba(248, 189, 219,0.2);
+
+}
+
+.stocksecCustomerimg{
+    height: 160px;
+    width: 115px;
+    position: absolute;
+    margin-left: 465px;
+    margin-top: 5px; 
+    border-radius: 10px;
+    background-color: rgba(248, 189, 219,0.2);
+
+
+}
+.stockbottomsecline{
+    width: 850px;
+    height: 1px;
+    background-color: gray;
+    margin-left: 240px;
+    box-shadow: 0px 0px 20px rgb(167, 167, 167);
+
+}

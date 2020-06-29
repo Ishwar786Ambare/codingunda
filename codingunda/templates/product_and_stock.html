@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+
+
+    <style>
+    .box.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+        margin-top: 70px;
+}
+    </style>
+
+
+<div class="box flex">
+  <p>
+    <img src="{% static './img/total_product.png' %}" width="75">
+    <h1>Total Product</h1><br><br>
+    <br><h2> -> 53</h2><br>
+  </p>
+  <p style="padding-left: 40px">
+    <img src="{% static './img/out_of_stock.png' %}" width="75">
+    <h1>Out Of Stock</h1><br>
+    <br><h2> -> 0</h2>
+  </p>
+</div>
+{% endblock %}

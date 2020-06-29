@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from blog.views import index, about, post, contact, search, view_all,product_settings
+from blog.views import index, about, post, contact, search, view_all,product_settings,product_and_stock
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -31,6 +31,7 @@ urlpatterns = [
 
 
 
+    path('product_and_stock/', product_and_stock, name='product_and_stock'),
 
     path('product_settings/', product_settings, name='product_settings'),
 ]

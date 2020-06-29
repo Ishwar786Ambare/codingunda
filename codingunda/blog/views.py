@@ -101,3 +101,7 @@ def view_all(request, query):
 
 def product_settings(request):
     return render(request, 'product_settings.html')
+
+
+def product_and_stock(request):
+    return render(request, 'product_and_stock.html',)

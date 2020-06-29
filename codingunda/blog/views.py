@@ -39,7 +39,7 @@ def index(request):
 
 def about(request):
     parms = {
-        'title': 'About | Codingunda',
+        'title': 'About | NEXTCLICK',
 
     }
     return render(request, 'about.html', parms)

@@ -105,3 +105,7 @@ def product_settings(request):
 
 def product_and_stock(request):
     return render(request, 'product_and_stock.html',)
+
+
+def support_and_feedback(request):
+    return render(request, 'support_and_feedback.html',)

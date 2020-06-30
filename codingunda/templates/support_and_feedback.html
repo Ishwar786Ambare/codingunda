@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block body %}
+
+    <style>
+    label{color: black}
+    {#button{text-align: center}#}
+    {#button{margin-left: 200px;padding-left: 100px}#}
+
+    </style>
+
+    <div class="container">
+    <div class="jumbotron">
+        <div class="offset-3 col-6">
+            <form>
+                <div class="form-group">
+                    <label for="inputlg"><h1>Support and Feedback</h1>></label>
+                    <input style="margin-bottom: 20px" class="form-control input-lg" id="inputlg" type="text">
+                    <button class="btn btn-success" type="submit">Share Feedback/Raise issue</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+{% endblock %}

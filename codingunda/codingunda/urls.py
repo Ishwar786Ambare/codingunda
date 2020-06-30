@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from blog.views import index, about, post, contact, search, view_all,product_settings,product_and_stock
+from blog.views import index, about, post, contact, search, view_all,product_settings,product_and_stock,support_and_feedback
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -30,6 +30,10 @@ urlpatterns = [
     path('ckeditor/', include('ckeditor_uploader.urls')),
 
 
+
+
+
+    path('support_and_feedback/', support_and_feedback, name='support_and_feedback'),
 
     path('product_and_stock/', product_and_stock, name='product_and_stock'),
 

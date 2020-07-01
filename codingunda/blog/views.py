@@ -104,15 +104,40 @@ def product_settings(request):
 
 
 def product_and_stock(request):
-    return render(request, 'product_and_stock.html',)
+    return render(request, 'product_and_stock.html', )
 
 
 def support_and_feedback(request):
-    return render(request, 'support_and_feedback.html',)
+    return render(request, 'support_and_feedback.html', )
+
 
 def online_and_store(request):
-    return render(request, 'online_and_store.html',)
+    return render(request, 'online_and_store.html', )
 
 
 def settings_and_details(request):
-    return render(request,'settings_and_details.html')
+    return render(request, 'settings_and_details.html')
+
+
+def rate(request):
+    if request.method == 'POST':
+        pass
+    else:
+        return render(request, 'rate.html', )
+
+
+def get_data(request):
+    if request.method == 'POST':
+        fname = request.POST['fname']
+        lname = request.POST['lname']
+        eaddress = request.POST['eaddress']
+        tel = request.POST['tel']
+        message = request.POST['message']
+
+        data = Content(
+
+        )
+        return HttpResponse('WE WILL CONNECT YOU SOON')
+        pass
+    else:
+        return HttpResponse('WE WILL CONNECT YOU SOON')

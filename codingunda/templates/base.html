@@ -26,17 +26,7 @@
   <link href="{% static 'css/jquery.mb.YTPlayer.min.css' %}" media="all" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
-
-
-
-
-
 {#  <link rel="stylesheet" href="{% static 'css\first.css' %}">#}
-
-
-
-
-
 
 </head>
 
@@ -62,9 +52,9 @@
                 </div>
                 <div class="col-12 col-lg-6 ml-auto d-flex">
                     <div class="ml-md-auto top-social d-none d-lg-inline-block">
-                        <a href="#" class="d-inline-block p-3"><span class="icon-facebook"></span></a>
-                        <a href="#" class="d-inline-block p-3"><span class="icon-twitter"></span></a>
-                        <a href="#" class="d-inline-block p-3"><span class="icon-instagram"></span></a>
+                        <a href="https://facebook.com" class="d-inline-block p-3"><span class="icon-facebook"></span></a>
+                        <a href="https://twitter.com" class="d-inline-block p-3"><span class="icon-twitter"></span></a>
+                        <a href="https://instagram.com" class="d-inline-block p-3"><span class="icon-instagram"></span></a>
                     </div>
                     <form action="{% url 'search' %}" class="search-form d-inline-block" method="get">
                         <div class="d-flex">
@@ -93,8 +83,6 @@
 
 
 
-
-
                                 <li><a href="{% url 'online_and_store' %}" class="nav-link text-left">Online & Store</a></li>
                                 <li><a href="{% url 'contact' %}" class="nav-link text-left">Subscriptions</a></li>
                                 <li><a href="{% url 'contact' %}" class="nav-link text-left">Promotions</a></li>
@@ -102,7 +90,7 @@
                                 <li><a href="{% url 'product_settings' %}" class="nav-link text-left">Setting and Detail</a></li>
                                 <li><a href="{% url 'contact' %}" class="nav-link text-left">Reports</a></li>
                                 <li><a href="{% url 'contact' %}" class="nav-link text-left">Coins</a></li>
-                                <li><a href="{% url 'contact' %}" class="nav-link text-left">Rate App</a></li>
+                                <li><a href="{% url 'rate' %}" id="myBtn" class="nav-link text-left">Rate App</a></li>
                                 <li><a href="{% url 'support_and_feedback' %}" class="nav-link text-left">Support and feedback</a></li>
                                 <li><a href="{% url 'contact' %}" class="nav-link text-left">Logout</a></li>
                                 <li><a href="{% url 'about' %}" class="nav-link text-left">About</a></li>
@@ -117,9 +105,10 @@
 
 
 
-
-
-
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
 
 
 
@@ -146,32 +135,9 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 {% block body %}
 
 {% endblock body %}
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -642,10 +608,7 @@ font-weight: 500;
 
 
 
-
-
-
-    <section id="product">
+<section id="product">
         <div class="productspandiv">
             <span class="productspan">Configure Store</span>
             <div class="productline"></div>
@@ -672,9 +635,7 @@ font-weight: 500;
 
 
 
-
-
-    <section id="stock">
+<section id="stock">
         <div class="stockspandiv">
             <span class="stockspan">More</span>
             <div class="stockline"></div>
@@ -729,16 +690,6 @@ font-weight: 500;
 
 
 
-
-
-
-
-
-
-
-
-
-
 {#<div class="footer">#}
 {#    <div class="container">#}
 {#        <div class="row">#}
@@ -755,7 +706,8 @@ font-weight: 500;
 {#    </div>#}
 {#</div>#}
 {#</div>#}
-  <!-- .site-wrap -->
+
+
 
 
   <!-- loader -->
@@ -775,5 +727,38 @@ font-weight: 500;
   <script src="{% static 'js/jquery.sticky.js' %}"></script>
   <script src="{% static 'js/jquery.mb.YTPlayer.min.js' %}"></script>
   <script src="{% static 'js/main.js' %}"></script>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
 </body>
 </html>
+
+

@@ -19,7 +19,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from blog.views import index, about, post, \
     contact, search, view_all,product_settings,\
-    product_and_stock,support_and_feedback,online_and_store
+    product_and_stock,support_and_feedback,online_and_store,settings_and_details
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -36,6 +36,8 @@ urlpatterns = [
 
 
     path('support_and_feedback/', support_and_feedback, name='support_and_feedback'),
+    path('settings_and_details/', settings_and_details, name='settings_and_details'),
+
     path('online_and_store/', online_and_store, name='online_and_store'),
 
     path('product_and_stock/', product_and_stock, name='product_and_stock'),

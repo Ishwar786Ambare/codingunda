@@ -112,3 +112,7 @@ def support_and_feedback(request):
 
 def online_and_store(request):
     return render(request, 'online_and_store.html',)
+
+
+def settings_and_details(request):
+    return render(request,'settings_and_details.html')

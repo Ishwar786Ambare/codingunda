@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
+    <style>
+        .w3-sidebar a {font-family: "Roboto", sans-serif}
+        body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+
+    </style>
+
+
+  <!-- Image header -->
+    <div class="container">
+    <div class="jumbotron">
+        <div class="w3-display-container w3-container">
+            <img src="{% static '.\img\shop.jpg' %}" alt="Jeans" style="width:100%">
+            <div class="w3-display-topleft w3-text-white" style="padding:24px 48px">
+                <h1 class="w3-jumbo w3-hide-small">New arrivals</h1>
+                <h1 class="w3-hide-large w3-hide-medium">New arrivals</h1>
+                <h1 class="w3-hide-small">COLLECTION 2016</h1>
+                <p><a href="#jeans" class="w3-button w3-black w3-padding-large w3-large">REGISTER YOUR SHOP NOW</a></p>
+            </div>
+        </div>
+
+{#    <!-- Modal -->#}
+
+        <div class="w3-modal-content w3-card-4 w3-animate-top">
+            <header class="w3-container w3-theme-l1">
+                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">×</span>
+                <h4>Buy now at just rupees $99/Month </h4>
+                <h5>Because we can <i class="fa fa-smile-o"></i></h5>
+            </header>
+            <div class="w3-padding">
+                <p>Launch Online store and give your customers a chance to order from home
+                    </p>
+                <p>Go to shop <a style="color: black" class="w3-btn" href="/w3css/default.asp">Buy Now</a> Thanks </p>
+            </div>
+{#            <footer class="w3-container w3-theme-l1">#}
+{#                <p>Modal footer</p>#}
+{#            </footer>#}
+{#        </div>#}
+
+
+{#  <div class="w3-container w3-text-grey" id="jeans">#}
+{#    <p>8 items</p>#}
+{#  </div>#}
+    </div>
+    </div>
+
+
+{% endblock %}

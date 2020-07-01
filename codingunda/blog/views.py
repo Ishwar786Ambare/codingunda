@@ -109,3 +109,6 @@ def product_and_stock(request):
 
 def support_and_feedback(request):
     return render(request, 'support_and_feedback.html',)
+
+def online_and_store(request):
+    return render(request, 'online_and_store.html',)
